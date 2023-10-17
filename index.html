@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download ZIP Archive</title>
+</head>
+<body>
+    <h1>Download ZIP Archive</h1>
+   
+
+    <form action="http://localhost:7171/api/archive/files" enctype="multipart/form-data" method="post">
+        <input type="file" name="files[]" multiple>
+        <button type="submit">Download</button>
+    </form>
+</body>
+</html>
