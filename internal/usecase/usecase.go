@@ -79,7 +79,7 @@ func (a *archiveUsecase) SendFileToEmails(fileHeader *multipart.FileHeader, emai
 		return err
 	}))
 
-	d := gomail.NewDialer("smtp.gmail.com", 587, "bagdat365@gmail.com", "gugu pjqc tfsr hbuu")
+	d := gomail.NewDialer("smtp.gmail.com", 587, "your-emails", "your-password")
 
 	for _, recipient := range emails {
 		message.SetHeader("To", recipient)
