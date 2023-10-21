@@ -11,5 +11,5 @@ func main() {
 	router := gin.Default()
 	au := usecase.NewArchiveUsecase()
 	delivery.NewArchiveHandler(router, au)
-	router.Run("localhost:7171")
+	router.Run("localhost:7169")
 }
